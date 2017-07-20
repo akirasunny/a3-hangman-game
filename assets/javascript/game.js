@@ -39,7 +39,7 @@ document.onkeyup = function(event) {
 			document.getElementById("popout").innerHTML = win;
 		}
 
-		else if (chances < 0 && concatenator !== computerchoice) {
+		else if (chances <= 0 && concatenator !== computerchoice) {
 			var lose = "<br>No available guess now, try again...<br>"
 			+ "<br><button type='button' onclick='window.location.reload()'>Try Again</button>"
 			+ "<br><br>";
