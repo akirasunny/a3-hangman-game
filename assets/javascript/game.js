@@ -14,9 +14,6 @@ var concatenator = space.repeat(computerchoice.length);
 var keycode;
 document.getElementById("dash").textContent = placeholder;
 
-// temporary codes for debugging
-console.log(computerchoice);
-
 document.onkeyup = function(event) {
 	keycode = event.keyCode;
 	if (keycode > 64 && keycode < 91) {
@@ -27,13 +24,8 @@ document.onkeyup = function(event) {
 			if (event.key === computerchoice[i] && placeholder[i * 2] === "_") {
 				placeholder = placeholder.substring(0, i * 2) + computerchoice[i] + placeholder.substring(i * 2 + 1, );
 				concatenator = concatenator.substring(0, i) + computerchoice[i] + concatenator.substring(i + 1, );
-				// console.log(i);
-				// console.log(placeholder);
-				// console.log(placeholder[i * 2]);
 			}
 		}
-		console.log(concatenator);
-		console.log(placeholder);
 
 		// page update
 		document.getElementById("dash").textContent = placeholder;
