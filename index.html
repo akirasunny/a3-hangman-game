@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hangman - Traditional Chinese Painting Guess</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!-- 	<embed loop="true" src="assets/javascript/dengdaimingming.mp3" hidden="true" type="video/quicktime"></embed> -->
+	<div class="container">
+	<img src="assets/images/header.png" width=100%>
+		<div class="picholder">
+			<img src="assets/images/img_left.png" width=100%>
+			
+			<audio controls>
+  				<source src="assets/javascript/dengdaimingming.mp3" type="audio/ogg">
+			</audio>
+			<p>BGM: 等待命名</p> <p>(Waiting To Be Named)</p><p>Composer: 常静 (Chang Jing)</p>
+		</div>
+
+
+		<div class="gamearea">
+		<div class="dashline">
+		<h3>
+			<span id=popout>
+			<p><span id="dash"></span></p>
+			<p>Guesses left: <span id="guesses"></span></p>
+			<p>Letters you've guessed so far:<span id="input"></span></p>
+			</span>
+		</h3>
+		</div>
+			<p>Have you ever learned something about traditional Chinese paintings? Painters usually use some items to convey specific moods. For example, some flowers appear in harsh winter, they hence become a metaphor of insisitence under terrible environment; Some take roots into silt, yet grow in a clean manner, therefore they symbolize the spirit of keeping oneself in messy surroundings.</p>
+			<p>The word you're going to guess are from these specific-moods-included items. Try to figure it out :p </p>
+			<script src="assets/javascript/game.js"></script>
+		</div>
+	</div>
+
+	<footer>
+		© Copyright 2017 Hao Su
+	</footer>
+</body>
+</html>
